@@ -1,0 +1,48 @@
+.sidebar {
+            
+            height: 100vh;
+            
+         
+          
+            position: fixed;
+       
+            width: 200px;
+            background: #2C3E50;
+            color: white;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            background: #34495E;
+            border-radius: 5px;
+            text-align: center;
+            transition: 0.3s;
+            
+        }
+        .sidebar a:hover {
+            background: #1ABC9C;
+        }
+
+
+        <div class="sidebar">
+        <h2>Navigation</h2>
+        
+            <a href="exemple.php">Accueil</a>
+            <a href="test21.html">Ajouter des Données</a>
+            <a href="dashboard.php">Gestion des agents municipaux</a>
+            <a href="tableau_agents.php">tableau agents</a>
+            <a href="graphique_salaire.php">graphique salaire</a>
+            <a href="connexion.html">Deconneter</a>
+            
+ 
+    </div>

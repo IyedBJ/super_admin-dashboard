@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Super User Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <!-- Afficher le message sous le formulaire -->
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêcher la soumission du formulaire
+
+            // Récupérer les valeurs saisies
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Vérifier si les identifiants sont corrects
+            if (username === "admin" && password === "123") {
+                // Rediriger vers une autre page
+                window.location.href = "exemple.php"; // Remplace "dashboard.php" par l'URL de ta page
+            } else {
+                // Afficher un message d'erreur
+                document.getElementById("message").textContent = "Identifiants incorrects. Essayez à nouveau.";
+                document.getElementById("message").style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
