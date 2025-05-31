@@ -1,0 +1,17 @@
+.service {
+    display: flex;
+    align-items: flex-start; /* Aligner l'icône avec le haut du texte */
+     /* Espacement entre l'icône et le texte */
+}
+
+.icones img {
+    width: 70px;  /* Taille de l'image */
+    height: auto;
+    
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: column; /* Met le titre au-dessus du paragraphe */
+   
+}

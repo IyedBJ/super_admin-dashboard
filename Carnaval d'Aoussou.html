@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Details</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <style>
+    
+    .calendar {
+        width: 320px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .calendar h2 {
+        margin-bottom: 10px;
+    }
+    .weekdays, .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+    .weekdays div {
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .day {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ddd;
+        border-radius: 5px;
+    }
+    .day:hover {
+        background: #3498db;
+        color: white;
+        cursor: pointer;
+    }
+    .highlight {
+        background: #2ecc71 !important;
+        color: white;
+    }
+    .empty {
+        visibility: hidden;
+    }
+</style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+           <img src="assets/img/logo.png" alt="" width="200px" height="50px">
+          <h1 class="sitename">Baladia +</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+
+          
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+       
+  
+      </div>
+    </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/6381499_orig.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480929021_1160823045599590_6373185471028114821_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/481071342_1160818915600003_5675873859749673839_n.jpg" alt="">
+                </div>
+
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480677661_1160822815599613_5433596223119044853_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480820430_1160823122266249_7248961377271903579_n.jpg" alt="">
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480519809_1160822612266300_1577541230800633729_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480787481_1160822688932959_5908771946378855965_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/481047624_1160822432266318_6095162104005648421_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/481099880_1160822835599611_1368667953646306298_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480749355_1160822438932984_5987723490476660833_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480783069_1160822475599647_8303193497436335756_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480687600_1160823105599584_4456208035957161503_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480554354_1160822685599626_5220997191865650512_n.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/Festival International de Sousse/480554232_1160822692266292_6913788328692331847_n.jpg" alt="">
+                </div>
+
+             
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <div class="calendar">
+                <h2><b>Juillet <span id="year"></span></b></span></h2>
+                <div class="weekdays">
+                    <div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div>
+                </div>
+                <div class="days" id="calendar-days"></div>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h1><b>Carnaval d'Aoussou 🎉</b></h1>
+              <p>
+                Festival d'été avec un grand défilé de chars, fanfares et animations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Baladia +</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>rue de la republique</p>
+            <p>Hammam-Sousse 4011</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>73 363 086</span></p>
+            <p><strong>Email:</strong> <span>contact@commune-hammamsousse.gov.tn</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Baladia +</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    const year = 2025;
+    document.getElementById("year").textContent = year;
+    
+    function generateCalendar(year) {
+        const daysContainer = document.getElementById("calendar-days");
+        daysContainer.innerHTML = "";
+        
+        const firstDay = new Date(year, 6, 1).getDay();  // Juillet est le mois 6
+        const daysInMonth = 31;
+        
+        for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
+            const emptyDiv = document.createElement("div");
+            emptyDiv.classList.add("empty");
+            daysContainer.appendChild(emptyDiv);
+        }
+        
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dayDiv = document.createElement("div");
+            dayDiv.classList.add("day");
+            dayDiv.textContent = day;
+            
+            // Colorier le 24 juillet 2025
+            if (day === 24) {
+                dayDiv.classList.add("highlight");
+            }
+            
+            daysContainer.appendChild(dayDiv);
+        }
+    }
+    
+    generateCalendar(year);
+</script>
+
+</body>
+
+</html>
